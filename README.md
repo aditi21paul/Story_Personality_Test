@@ -5,3 +5,5 @@ In this game, the user comes across a fascinating story with different junctures
 The code is written in Java making use of the concept of Card Layout, Swing .
 
 To play the game, the user reads the story and selects the option he/she deems fit and clicks on 'next', after the user has played the game till where desired, then the 'score revealer' button is pressed which takes the user to the initial frame and reveals the total scores along with feedback, when pressing next.
+
+I have kept all the code in 1 file for better readibility, but please make sure to save each public java class in a separate file, if you plan on compiling and running it.

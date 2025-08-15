@@ -30,10 +30,10 @@ public class QnA {
 	}
 
 	int retPts(String ansChosen ) {
-		if(ansChosen==option1) {return pt1;}
-		else if(ansChosen==option2) {return pt2;}
-		else if(ansChosen==option3) {return pt3;}
-		else if(ansChosen==option4) {return pt4;}
+		if(ansChosen.equals(option1)) {return pt1;}
+		else if(ansChosen.equals(option2)) {return pt2;}
+		else if(ansChosen.equals(option3)) {return pt3;}
+		else if(ansChosen.equals(option4)) {return pt4;}
 		return 0;
 	}
 	
@@ -73,10 +73,10 @@ It also has the code to decide the feedback to be displayed based on option chos
 		
    		int retAns(String a) {
    			
-		  	if(a==quest.option1) {   return quest.pt1; }
-		  	if(a==quest.option2) {   return quest.pt2; }
-		  	if(a==quest.option3) {return quest.pt3; }
-		  	if(a==quest.option4) { return quest.pt4; }
+		  	if(a.equals(quest.option1)) {   return quest.pt1; }
+		  	if(a.equals(quest.option2)) {   return quest.pt2; }
+		  	if(a.equals(quest.option3)) {return quest.pt3; }
+		  	if(a.equals(quest.option4)) { return quest.pt4; }
 		  	 return 0 ;
 			
 		}
@@ -110,7 +110,6 @@ It also has the code to decide the feedback to be displayed based on option chos
 			c2=new JCheckBox(quest.option2);
 			c3=new JCheckBox(quest.option3);
 			c4=new JCheckBox(quest.option4);
-			//next =new JButton("Next");
 			
 			ButtonGroup group = new ButtonGroup();
 			group.add(c1);
@@ -596,7 +595,7 @@ public class Helperv3 {
                 qc[i].setName("name"+i ); }
 	/*
         JLabel imageLabel = new JLabel();
-        ImageIcon imageIcon = new ImageIcon("Image path"); 
+        ImageIcon imageIcon = new ImageIcon("Image path");   
         Image scaledImage = imageIcon.getImage().getScaledInstance(800, 400, Image.SCALE_SMOOTH); 
         imageLabel.setIcon(new ImageIcon(scaledImage));
 
